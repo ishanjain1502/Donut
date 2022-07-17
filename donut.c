@@ -7,7 +7,7 @@ int main() {
     char screen[1760];
     printf("\x1b[2J");
     while (1) {
-        // init arrays
+   
         int la;
         for (la=0;la<1760;la++) {
             z[la] = 0;
@@ -33,8 +33,7 @@ int main() {
                     o=x+80*y,
                     N=8*((sinj*sinA-sini*cosj*cosA)*cosB-sini*cosj*sinA-sinj*cosA-cosi *cosj*sinB);
 
-                // debug
-                // printf("%d %d %d %d\n",x,y,o,N);
+ 
                 if(22>y&&y>0&&x>0&&80>x&&mess>z[o]){
                     z[o]=mess;
                     if (N>0) {
@@ -46,7 +45,7 @@ int main() {
             }
         }
 
-        // prints
+       
         printf("\x1b[d");
         for(k=0; 1761>k; k++)
         if (k%80==0) {
